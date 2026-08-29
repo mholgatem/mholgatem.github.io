@@ -1,87 +1,166 @@
-<html lang="en-US" class=" js borderradius boxshadow textshadow cssgradients fontface"><head>
-    <meta name="google-site-verification" content="4kKJHoDKwOcDGaw-sjb0-jh303EW6I68_P8eZ5258yw" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=640">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mholgatem</title>
+<meta name="description" content="Tools and projects by mholgatem.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
 
-    <link rel="stylesheet" href="/dabble/assets/css/style.css?v=c3890d4c0bee07519128a38839c2647bb169bca9" media="screen">
-    <link rel="stylesheet" href="/dabble/assets/css/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="/dabble/assets/css/non-screen.css" media="handheld, only screen and (max-device-width:640px)">
+<header class="main-header">
+  <div class="container">
+    <h1>mholgatem</h1>
+    <p class="tagline">Small tools, built to run entirely in the browser.</p>
+  </div>
+</header>
 
-    <script src="/dabble/assets/js/modernizr.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="/dabble/assets/js/headsmart.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
+<main class="container">
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>dabble | make google drive documents embeddable</title>
-<meta name="generator" content="Jekyll v3.7.4">
-<meta property="og:title" content="dabble">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="make google drive documents embeddable">
-<meta property="og:description" content="make google drive documents embeddable">
-<link rel="canonical" href="https://mholgatem.github.io/">
-<meta property="og:url" content="https://mholgatem.github.io/">
-<meta property="og:site_name" content="dabble">
-<script type="application/ld+json">
-{"@type":"WebSite","url":"https://mholgatem.github.io/","headline":"mholgatem","name":"mholgatem","description":"Just a guy...","@context":"http://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+  <!-- ================= Digital Logic Lab ================= -->
+  <section class="project-section">
+    <div class="section-heading">
+      <h2>Digital Logic Lab</h2>
+      <a class="section-link" href="https://github.com/mholgatem/digital-logic-lab" target="_blank" rel="noopener">
+        View repo
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+    </div>
+    <p class="section-desc">Interactive tools and games for learning digital logic, including FSM builders, mux puzzles, and decoder challenges.</p>
 
-  </head>
+    <div class="module-grid">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/mholgatem/dabble">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>placeholder</h1>
-            <h2>this is not the greatest website in the world, this is only a tribute.</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      
-        <div id="no-downloads">
-          <span class="inner">
-          </span>
+      <a href="https://mholgatem.github.io/digital-logic-lab/FiniteStateMachine/" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
         </div>
-      
+        <div class="module-info">
+          <h3>FSM Designer</h3>
+          <p>Build, visualize, and verify Finite State Machines (Moore &amp; Mealy).</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
 
+      <a href="https://mholgatem.github.io/digital-logic-lab/MuxLogicTool/" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+        </div>
+        <div class="module-info">
+          <h3>Mux Logic Tool</h3>
+          <p>Interactive module for visualizing Karnaugh map symmetry and multiplexer logic.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
 
-      <span class="banner-fix"></span>
+      <a href="https://mholgatem.github.io/digital-logic-lab/DecoderGames/" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+        </div>
+        <div class="module-info">
+          <h3>Decoder Lab</h3>
+          <p>Interactive puzzles to understand binary-to-decimal decoding.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
 
+      <a href="https://mholgatem.github.io/digital-logic-lab/FlipFlops/" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+        </div>
+        <div class="module-info">
+          <h3>Latches &amp; Flip-Flops</h3>
+          <p>Visualizers for latches and D, T, JK memory elements.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
 
-      <section id="main_content">
-        <p>embeddable google drive files</p>
-
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            
-              <p>this project by <a href="https://github.com/mholgatem">mholgatem</a> can be found on <a href="https://github.com/mholgatem">GitHub</a></p>
-            
-            
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+      <div class="module-card planned">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+        </div>
+        <div class="module-info">
+          <h3>K-map Visualizer</h3>
+          <p>Visualize and play with Karnaugh maps (SOP &amp; POS).</p>
+          <span class="badge planned">Coming Soon</span>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-    
-  
+  <!-- ================= PDF Tools ================= -->
+  <section class="project-section">
+    <div class="section-heading">
+      <h2>PDF Tools</h2>
+      <a class="section-link" href="https://mholgatem.github.io/pdf-tools/" target="_blank" rel="noopener">
+        View site
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
+      </a>
+    </div>
+    <p class="section-desc">Simple, private PDF editing that runs entirely in your browser. No uploads, no accounts.</p>
 
-</body></html> 
+    <div class="module-grid">
+
+      <a href="https://mholgatem.github.io/pdf-tools/#combine" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M12 18v-6"></path><path d="M9 15h6"></path></svg>
+        </div>
+        <div class="module-info">
+          <h3>Combine PDFs</h3>
+          <p>Merge multiple PDFs into a single document in any order.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
+
+      <a href="https://mholgatem.github.io/pdf-tools/#split" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h2"></path><path d="M16 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2"></path><line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3 3"></line></svg>
+        </div>
+        <div class="module-info">
+          <h3>Split PDF</h3>
+          <p>Extract page ranges from a PDF into separate files.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
+
+      <a href="https://mholgatem.github.io/pdf-tools/#repaginate" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="10" height="14" rx="1"></rect><rect x="10" y="8" width="10" height="14" rx="1"></rect></svg>
+        </div>
+        <div class="module-info">
+          <h3>Repaginate</h3>
+          <p>Slice a tall single-page PDF into standard-sized pages for printing.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
+
+      <a href="https://mholgatem.github.io/pdf-tools/#form-editor" class="module-card live">
+        <div class="module-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="7" y1="9" x2="17" y2="9"></line><rect x="7" y="13" width="4" height="3"></rect><line x1="13" y1="14.5" x2="17" y2="14.5"></line></svg>
+        </div>
+        <div class="module-info">
+          <h3>Form Editor</h3>
+          <p>Add interactive form fields to any PDF and save with AcroForms support.</p>
+          <span class="badge live">Live</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> mholgatem &mdash; <a href="https://github.com/mholgatem" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
