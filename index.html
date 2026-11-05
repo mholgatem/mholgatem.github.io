@@ -4,152 +4,258 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>mholgatem</title>
-<meta name="description" content="Tools and projects by mholgatem.">
+<meta name="description" content="Tools and projects by mholgatem: SpeedView for Canvas, Syntax, GPIOnext, Digital Logic Lab and PDF Tools.">
+<meta name="theme-color" content="#0f1215">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark">
+<body>
 
-<header class="main-header">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+</svg>
+
+<nav class="site-nav" aria-label="Main">
   <div class="container">
-    <h1>mholgatem</h1>
-    <p class="tagline">Small tools, built to run entirely in the browser.</p>
+    <a class="wordmark" href="#top">mholgatem<span>_</span></a>
+    <ul class="nav-links">
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#digital-logic-lab" class="hide-sm">Digital Logic Lab</a></li>
+      <li><a href="#pdf-tools" class="hide-sm">PDF Tools</a></li>
+      <li><a href="https://github.com/mholgatem" target="_blank" rel="noopener" aria-label="GitHub profile"><svg width="16" height="16"><use href="#i-github"/></svg><span class="hide-sm">GitHub</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <p class="eyebrow">Tools &amp; projects</p>
+    <h1>Small, focused tools for the <em>classroom, the lab bench, and the arcade cabinet.</em></h1>
+    <p class="lede">Browser extensions, in-browser editors, interactive digital logic visualizers, and Raspberry&nbsp;Pi utilities. Most of it runs entirely in your browser, with no uploads and no accounts.</p>
+    <ul class="hero-index">
+      <li><a href="#speedview"><span class="dot"><img src="assets/img/speedview-icon.png" alt="" width="20" height="20"></span>SpeedView for Canvas</a></li>
+      <li><a href="#syntax"><span class="dot"><img src="assets/img/syntax-icon.png" alt="" width="20" height="20"></span>Syntax</a></li>
+      <li><a href="#gpionext"><span class="dot" style="background:#0b1020;color:#00e5ff"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="15" cy="13" r=".6"/><circle cx="18" cy="11" r=".6"/><rect x="2" y="6" width="20" height="12" rx="4"/></svg></span>GPIOnext</a></li>
+    </ul>
   </div>
 </header>
 
-<main class="container">
+<main>
 
-  <!-- ================= Digital Logic Lab ================= -->
-  <section class="project-section">
-    <div class="section-heading">
-      <h2>Digital Logic Lab</h2>
-      <a class="section-link" href="https://mholgatem.github.io/digital-logic-lab" target="_blank" rel="noopener">
-        View site
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
-      </a>
-    </div>
-    <p class="section-desc">Interactive tools and games for learning digital logic, including FSM builders, mux puzzles, and decoder challenges.</p>
+  <!-- ================= Featured ================= -->
+  <section class="section" id="featured">
+    <div class="container">
 
-    <div class="module-grid">
+      <!-- SpeedView -->
+      <article class="showcase speedview" id="speedview">
+        <div class="showcase-media">
+          <a href="https://chromewebstore.google.com/detail/speedview-for-canvas/bplaoeljiecmbkjepofjfhhafklddmip" target="_blank" rel="noopener">
+            <img src="assets/img/speedview-marquee.webp" width="1400" height="560" alt="SpeedView drawer open in Canvas SpeedGrader, showing a student's zip file, Verilog source and a waveform viewer">
+          </a>
+        </div>
+        <div class="showcase-body">
+          <p class="eyebrow">Browser extension &middot; Chrome &amp; Firefox</p>
+          <div class="showcase-title">
+            <img src="assets/img/speedview-icon.png" alt="" width="44" height="44">
+            <h3>SpeedView for Canvas</h3>
+          </div>
+          <p>SpeedGrader only previews a handful of file types. SpeedView adds a drawer right next to the grading panel that opens everything else, so you stop downloading and unzipping submissions one student at a time.</p>
+          <ul class="feature-list">
+            <li><strong>Zip &amp; tar archives</strong> browsed in place, nested ones included</li>
+            <li><strong>Source code</strong> with highlighting: Python, Verilog, VHDL, C/C++, assembly and more</li>
+            <li><strong>Notebooks, Word, Excel, PowerPoint</strong>, Markdown, CSV and PDFs</li>
+            <li><strong>VCD waveforms</strong> drawn GTKWave-style, with saved signal layouts</li>
+            <li><strong>FERPA-friendly:</strong> student files never leave your browser</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/speedview-for-canvas/bplaoeljiecmbkjepofjfhhafklddmip" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Chrome Web Store</a>
+            <a class="btn" href="https://addons.mozilla.org/en-US/firefox/addon/speedview-for-canvas/" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Firefox Add-ons</a>
+            <a class="btn" href="https://github.com/mholgatem/SpeedViewForCanvas" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Source</a>
+          </div>
+        </div>
+      </article>
 
-      <a href="https://mholgatem.github.io/digital-logic-lab/FiniteStateMachine/" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+      <!-- Syntax -->
+      <article class="showcase syntax flip" id="syntax">
+        <div class="showcase-media">
+          <a href="https://mholgatem.github.io/syntax/" target="_blank" rel="noopener">
+            <img src="assets/img/syntax-splash.webp" width="1400" height="788" loading="lazy" alt="Syntax editor logo over a blurred SystemVerilog file in the neon theme">
+          </a>
         </div>
-        <div class="module-info">
-          <h3>FSM Designer</h3>
-          <p>Build, visualize, and verify Finite State Machines (Moore &amp; Mealy).</p>
-          <span class="badge live">Live</span>
+        <div class="showcase-body">
+          <p class="eyebrow">In-browser code editor</p>
+          <div class="showcase-title">
+            <img src="assets/img/syntax-icon.png" alt="" width="44" height="44">
+            <h3>Syntax</h3>
+          </div>
+          <p>A fast, private code editor with the everyday features of a desktop text editor. Drop in files or whole folders; they open as tabs and are never uploaded.</p>
+          <ul class="feature-list">
+            <li><strong>60+ languages</strong>, with first-class Verilog, SystemVerilog, VHDL and Tcl/XDC</li>
+            <li><strong>HDL tools:</strong> outline, go-to-definition, copy as instance, align statements</li>
+            <li><strong>Side-by-side diff</strong>, split views, and find &amp; replace across every tab</li>
+            <li><strong>Themes</strong> from Solarized to Gruvbox, plus a CRT-style <em>Mode 13h</em></li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="https://mholgatem.github.io/syntax/" target="_blank" rel="noopener">Open Syntax<svg><use href="#i-play"/></svg></a>
+            <a class="btn" href="https://github.com/mholgatem/syntax" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Source</a>
+          </div>
         </div>
-      </a>
+      </article>
 
-      <a href="https://mholgatem.github.io/digital-logic-lab/MuxLogicTool/" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+      <!-- GPIOnext -->
+      <article class="showcase gpionext" id="gpionext">
+        <div class="showcase-media svg-frame">
+          <a href="https://github.com/mholgatem/GPIOnext" target="_blank" rel="noopener">
+            <img src="assets/img/gpionext-splash.svg" width="980" height="330" loading="lazy" alt="GPIOnext terminal splash: Build the cab, map the pins">
+          </a>
         </div>
-        <div class="module-info">
-          <h3>Mux Logic Tool</h3>
-          <p>Interactive module for visualizing Karnaugh map symmetry and multiplexer logic.</p>
-          <span class="badge live">Live</span>
+        <div class="showcase-body">
+          <p class="eyebrow">Raspberry Pi &middot; Rust</p>
+          <div class="showcase-title">
+            <h3>GPIOnext</h3>
+          </div>
+          <p>Turn your Raspberry Pi's GPIO pins into virtual gamepads. A low-latency GPIO-to-HID daemon for arcade cabinets, compatible with RetroPie, PiPlay, Recalbox and Batocera.</p>
+          <ul class="feature-list">
+            <li><strong>Precompiled Rust binaries</strong> for lower input latency</li>
+            <li><strong>I2C expanders</strong> (MCP23017, PCF8574) for extra virtual pins</li>
+            <li><strong>Terminal config tool</strong> that works on Lite OS images and over SSH</li>
+            <li><strong>System commands</strong> on buttons: volume, shutdown and more</li>
+          </ul>
+          <div class="snippet">
+            <span class="prompt">$</span>
+            <code id="gpionext-install">curl -fL https://raw.githubusercontent.com/mholgatem/GPIOnext/main/manage | bash</code>
+            <button class="copy-btn" type="button" data-copy="gpionext-install"><svg width="13" height="13"><use href="#i-copy"/></svg><span>Copy</span></button>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://github.com/mholgatem/GPIOnext" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>View on GitHub</a>
+            <a class="btn" href="https://github.com/mholgatem/GPIOnext/releases/latest" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Latest release</a>
+          </div>
         </div>
-      </a>
-
-      <a href="https://mholgatem.github.io/digital-logic-lab/DecoderGames/" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-        </div>
-        <div class="module-info">
-          <h3>Decoder Lab</h3>
-          <p>Interactive puzzles to understand binary-to-decimal decoding.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
-
-      <a href="https://mholgatem.github.io/digital-logic-lab/FlipFlops/" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
-        </div>
-        <div class="module-info">
-          <h3>Latches &amp; Flip-Flops</h3>
-          <p>Visualizers for latches and D, T, JK memory elements.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
-
-      <div class="module-card planned">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
-        </div>
-        <div class="module-info">
-          <h3>K-map Visualizer</h3>
-          <p>Visualize and play with Karnaugh maps (SOP &amp; POS).</p>
-          <span class="badge planned">Coming Soon</span>
-        </div>
-      </div>
+      </article>
 
     </div>
   </section>
 
-  <!-- ================= PDF Tools ================= -->
-  <section class="project-section">
-    <div class="section-heading">
-      <h2>PDF Tools</h2>
-      <a class="section-link" href="https://mholgatem.github.io/pdf-tools/" target="_blank" rel="noopener">
-        View site
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg>
-      </a>
+  <!-- ================= Digital Logic Lab ================= -->
+  <section class="section" id="digital-logic-lab">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Digital Logic Lab</h2>
+        <a class="section-link" href="https://mholgatem.github.io/digital-logic-lab/" target="_blank" rel="noopener">
+          Open the lab <svg width="14" height="14"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+      <p class="section-desc">Interactive tools and games for learning digital logic: state machines, K-maps, multiplexers, decoders, flip-flops, and a waveform viewer for simulation output.</p>
+
+      <div class="module-grid">
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/FiniteStateMachine/" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="3.5"/><circle cx="18" cy="12" r="3.5"/><path d="M9.5 10.5c1.5-1.5 3.5-1.5 5 0"/><path d="M14.5 13.5c-1.5 1.5-3.5 1.5-5 0"/></svg></div>
+          <div class="module-info">
+            <h3>FSM Designer</h3>
+            <p>Build, visualize, and verify finite state machines (Moore &amp; Mealy).</p>
+          </div>
+        </a>
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/KmapVisualizer/" class="module-card">
+          <span class="badge">New</span>
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg></div>
+          <div class="module-info">
+            <h3>K-map Visualizer</h3>
+            <p>Visualize and play with Karnaugh maps (SOP &amp; POS).</p>
+          </div>
+        </a>
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/WaveformViewer/" class="module-card">
+          <span class="badge">New</span>
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 14 5 14 5 6 9 6 9 14 13 14 13 6 17 6 17 14 22 14"/><line x1="2" y1="19" x2="22" y2="19"/></svg></div>
+          <div class="module-info">
+            <h3>Waveform Viewer</h3>
+            <p>View simulation output (VCD, FST, LXT, LXT2, VZT) and GTKWave save files in the browser.</p>
+          </div>
+        </a>
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/MuxLogicTool/" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l8 4v10l-8 4z"/><line x1="3" y1="8" x2="8" y2="8"/><line x1="3" y1="16" x2="8" y2="16"/><line x1="16" y1="12" x2="21" y2="12"/></svg></div>
+          <div class="module-info">
+            <h3>Mux Logic Tool</h3>
+            <p>Explore Karnaugh map symmetry and multiplexer logic interactively.</p>
+          </div>
+        </a>
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/DecoderGames/" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <div class="module-info">
+            <h3>Decoder Lab</h3>
+            <p>Interactive puzzles to understand binary-to-decimal decoding.</p>
+          </div>
+        </a>
+
+        <a href="https://mholgatem.github.io/digital-logic-lab/FlipFlops/" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <div class="module-info">
+            <h3>Latches &amp; Flip-Flops</h3>
+            <p>Visualizers for latches and D, T, JK memory elements.</p>
+          </div>
+        </a>
+
+      </div>
     </div>
-    <p class="section-desc">Simple, private PDF editing that runs entirely in your browser. No uploads, no accounts.</p>
+  </section>
 
-    <div class="module-grid">
+  <!-- ================= PDF Tools ================= -->
+  <section class="section pdf" id="pdf-tools">
+    <div class="container">
+      <div class="section-heading">
+        <h2>PDF Tools</h2>
+        <a class="section-link" href="https://mholgatem.github.io/pdf-tools/" target="_blank" rel="noopener">
+          Open PDF Tools <svg width="14" height="14"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+      <p class="section-desc">Simple, private PDF editing that runs entirely in your browser. No uploads, no accounts.</p>
 
-      <a href="https://mholgatem.github.io/pdf-tools/#combine" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M12 18v-6"></path><path d="M9 15h6"></path></svg>
-        </div>
-        <div class="module-info">
-          <h3>Combine PDFs</h3>
-          <p>Merge multiple PDFs into a single document in any order.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
+      <div class="module-grid">
 
-      <a href="https://mholgatem.github.io/pdf-tools/#split" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h2"></path><path d="M16 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2"></path><line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3 3"></line></svg>
-        </div>
-        <div class="module-info">
-          <h3>Split PDF</h3>
-          <p>Extract page ranges from a PDF into separate files.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
+        <a href="https://mholgatem.github.io/pdf-tools/#combine" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></div>
+          <div class="module-info">
+            <h3>Combine PDFs</h3>
+            <p>Merge multiple PDFs into a single document in any order.</p>
+          </div>
+        </a>
 
-      <a href="https://mholgatem.github.io/pdf-tools/#repaginate" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="10" height="14" rx="1"></rect><rect x="10" y="8" width="10" height="14" rx="1"></rect></svg>
-        </div>
-        <div class="module-info">
-          <h3>Repaginate</h3>
-          <p>Slice a tall single-page PDF into standard-sized pages for printing.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
+        <a href="https://mholgatem.github.io/pdf-tools/#split" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h2"/><path d="M16 2h2a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2"/><line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="3 3"/></svg></div>
+          <div class="module-info">
+            <h3>Split PDF</h3>
+            <p>Extract page ranges from a PDF into separate files.</p>
+          </div>
+        </a>
 
-      <a href="https://mholgatem.github.io/pdf-tools/#form-editor" class="module-card live">
-        <div class="module-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="7" y1="9" x2="17" y2="9"></line><rect x="7" y="13" width="4" height="3"></rect><line x1="13" y1="14.5" x2="17" y2="14.5"></line></svg>
-        </div>
-        <div class="module-info">
-          <h3>Form Editor</h3>
-          <p>Add interactive form fields to any PDF and save with AcroForms support.</p>
-          <span class="badge live">Live</span>
-        </div>
-      </a>
+        <a href="https://mholgatem.github.io/pdf-tools/#repaginate" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="10" height="14" rx="1"/><rect x="10" y="8" width="10" height="14" rx="1"/></svg></div>
+          <div class="module-info">
+            <h3>Repaginate</h3>
+            <p>Slice a tall single-page PDF into standard-sized pages for printing.</p>
+          </div>
+        </a>
 
+        <a href="https://mholgatem.github.io/pdf-tools/#form-editor" class="module-card">
+          <div class="module-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="7" y1="9" x2="17" y2="9"/><rect x="7" y="13" width="4" height="3"/><line x1="13" y1="14.5" x2="17" y2="14.5"/></svg></div>
+          <div class="module-info">
+            <h3>Form Editor</h3>
+            <p>Add interactive form fields to any PDF and save with AcroForms support.</p>
+          </div>
+        </a>
+
+      </div>
     </div>
   </section>
 
@@ -157,10 +263,28 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <span id="year"></span> mholgatem &mdash; <a href="https://github.com/mholgatem" target="_blank" rel="noopener">GitHub</a></p>
+    <p>&copy; <span id="year"></span> mholgatem</p>
+    <p><a href="https://github.com/mholgatem" target="_blank" rel="noopener">github.com/mholgatem</a></p>
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = document.getElementById(btn.dataset.copy).textContent;
+      var label = btn.querySelector('span');
+      var done = function () {
+        btn.classList.add('copied');
+        label.textContent = 'Copied';
+        setTimeout(function () { btn.classList.remove('copied'); label.textContent = 'Copy'; }, 1600);
+      };
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(done, function () {});
+      }
+    });
+  });
+</script>
 </body>
 </html>
