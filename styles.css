@@ -403,6 +403,7 @@ a { color: inherit; }
 }
 
 .btn svg { width: 16px; height: 16px; flex: none; }
+.btn[hidden] { display: none; }
 
 .btn.primary {
   background: rgb(var(--tint));

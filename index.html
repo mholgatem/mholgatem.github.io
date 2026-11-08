@@ -75,8 +75,9 @@
             <li><strong>FERPA-friendly:</strong> student files never leave your browser</li>
           </ul>
           <div class="actions">
-            <a class="btn primary" href="https://chromewebstore.google.com/detail/speedview-for-canvas/bplaoeljiecmbkjepofjfhhafklddmip" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Chrome Web Store</a>
-            <a class="btn" href="https://addons.mozilla.org/en-US/firefox/addon/speedview-for-canvas/" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Firefox Add-ons</a>
+            <a class="btn primary" id="sv-safari" hidden href="https://github.com/mholgatem/SpeedViewForCanvas/blob/main/docs/SAFARI.md" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Self build for Safari</a>
+            <a class="btn primary" id="sv-chrome" href="https://chromewebstore.google.com/detail/speedview-for-canvas/bplaoeljiecmbkjepofjfhhafklddmip" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Chrome Web Store</a>
+            <a class="btn" id="sv-firefox" href="https://addons.mozilla.org/en-US/firefox/addon/speedview-for-canvas/" target="_blank" rel="noopener"><svg><use href="#i-download"/></svg>Firefox Add-ons</a>
             <a class="btn" href="https://github.com/mholgatem/SpeedViewForCanvas" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Source</a>
           </div>
         </div>
@@ -113,7 +114,7 @@
       <article class="showcase gpionext" id="gpionext">
         <div class="showcase-media svg-frame">
           <a href="https://github.com/mholgatem/GPIOnext" target="_blank" rel="noopener">
-            <img src="assets/img/gpionext-splash.svg" width="980" height="330" loading="lazy" alt="GPIOnext terminal splash: Build the cab, map the pins">
+            <img src="assets/img/gpionext-splash.png" width="980" height="330" loading="lazy" alt="GPIOnext terminal splash: Build the cab, map the pins">
           </a>
         </div>
         <div class="showcase-body">
@@ -270,6 +271,25 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Highlight the SpeedView install button that matches the visitor's browser.
+  (function () {
+    var ua = navigator.userAgent;
+    var chrome = document.getElementById('sv-chrome');
+    var firefox = document.getElementById('sv-firefox');
+    var safari = document.getElementById('sv-safari');
+    var isFirefox = /Firefox\/|FxiOS/.test(ua);
+    var isSafari = !isFirefox && /Safari\//.test(ua) &&
+      !/Chrome\/|Chromium\/|CriOS|Edg\/|EdgiOS|OPR\/|Android/.test(ua);
+    if (isFirefox) {
+      chrome.classList.remove('primary');
+      firefox.classList.add('primary');
+      firefox.parentNode.insertBefore(firefox, chrome);
+    } else if (isSafari) {
+      chrome.classList.remove('primary');
+      safari.hidden = false;
+    }
+  })();
 
   document.querySelectorAll('.copy-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
